@@ -1,50 +1,19 @@
-# React + TypeScript + Vite
+## Funcionalidades do projeto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto em TypeScript foi desenvolvido para a gestão simples e eficiente das informações de médicos e pacientes em uma clínica. A aplicação apresenta uma interface minimalista que exibe uma tabela única, onde estão listados todos os médicos e pacientes.
 
-Currently, two official plugins are available:
+- Dashboard: Página principal com tabela, gráficos e informações.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Objetivo:
 
-## Expanding the ESLint configuration
+O objetivo do projeto é oferecer uma solução simples e prática para a visualização e gerenciamento dos dados de médicos e pacientes na clínica, focando na usabilidade e eficiência.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Técnicas e tecnologias utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+As técnicas e tecnologias que serão utilizadas neste projeto são:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- React: Biblioteca para construção de interfaces de usuário.
+- Typescript: Linguagem de programação que adiciona tipagem estática ao Javascript.
+- Styled-Components: Biblioteca para estilização de componentes React utilizando CSS-in-JS.
+- MUI: Biblioteca de componentes React para criação de interfaces de usuário modernas e responsivas.
+- Recharts: Biblioteca para criação de gráficos utilizando React.
